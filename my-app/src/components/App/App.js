@@ -21,8 +21,8 @@ class App extends Component {
           </a>
         </header>
       </div>
-    );
-  }
-}
+    );  // end JSX  ->  what gets rendered to DOM in this component, and is returned
+  }  //  end render  ->  necessary method to render onto DOM
+}  //  end class 
 
 export default App;
