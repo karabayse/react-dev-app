@@ -5,8 +5,8 @@ class Body extends Component {
     return(
       <div>
         <p>Body</p>
-      </div> // end JSX
-    ); // end return
+      </div> // end containing div
+    ); // end JSX
   } // end render method
 } // end Component
 

@@ -5,7 +5,7 @@ class Footer extends Component {
     return(
       <div>
         <h2>Footer</h2>
-      </div>
+      </div> // end containing div
     ); // end JSX
   } // end render method
 } // end class Footer

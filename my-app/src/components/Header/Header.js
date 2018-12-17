@@ -5,7 +5,7 @@ class Header extends Component {
     return(
       <div className="App-header">
         <h1>New Header</h1>
-      </div>
+      </div> // end containing div
     ); // end JSX
   } // end render
 } // end class Header
