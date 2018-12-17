@@ -1,28 +1,16 @@
 import React, { Component } from 'react';
 import logo from '../../logo.svg';
+import Header from '../Header/Header';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/components/App/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Header />
       </div>
     );  // end JSX  ->  what gets rendered to DOM in this component, and is returned
   }  //  end render  ->  necessary method to render onto DOM
-}  //  end class 
+}  //  end class
 
 export default App;
