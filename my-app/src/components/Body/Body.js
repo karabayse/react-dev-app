@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 
 class Body extends Component {
+  addUsername = () => {
+    console.log('in addUsername function');
+  } // end addUsername
+
   render() {
     return(
       <div>
         <h1>Add Username</h1>
         <input type="text" placeholder="username"></input>
-        <button>Add Username</button>
+        <button onClick={ this.addUsername }>Add Username</button>
         <ul>
           <li>un00</li>
           <li>un01</li>
