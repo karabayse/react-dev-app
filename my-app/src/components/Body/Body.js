@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 class Body extends Component {
+  // addUsername arrow function expression which is a method
+  // using the function expression auto-binds this method to this class 
   addUsername = () => {
     console.log('in addUsername function');
   } // end addUsername
