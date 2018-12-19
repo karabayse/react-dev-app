@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 
 class Body extends Component {
+  constructor() {
+    super();
+    // state
+    this.state={
+      testTest: 'Test'
+    }; // end state
+  } // end constructor method
+
   // addUsername arrow function expression which is a method
-  // using the function expression auto-binds this method to this class 
+  // using the function expression auto-binds this method to this class
   addUsername = () => {
     console.log('in addUsername function');
   } // end addUsername
 
+  // render method
   render() {
     return(
       <div>
