@@ -14,6 +14,7 @@ class Body extends Component {
   addUsername = () => {
     const usernameIn = document.getElementById('usernameIn').value;
     console.log('in addUsername function:', usernameIn);
+    // use setState instead of assigning values to state properties
     this.setState( { testTest: usernameIn } );
     console.log(this.state);
   } // end addUsername
