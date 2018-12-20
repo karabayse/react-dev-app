@@ -5,7 +5,7 @@ class Body extends Component {
     super();
     // state
     this.state={
-      testTest: 'Test'
+      usernames: []
     }; // end state
   } // end constructor method
 
