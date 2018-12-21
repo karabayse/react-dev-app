@@ -15,23 +15,26 @@ class Body extends Component {
     const usernameIn = document.getElementById('usernameIn').value;
     console.log('in addUsername function:', usernameIn);
     // use setState instead of assigning values to state properties
-    this.setState( { testTest: usernameIn } );
-    console.log(this.state);
+    // this.setState( { testTest: usernameIn } );
+    // console.log(this.state);
   } // end addUsername
 
   // render method
   render() {
+    // use map to map this.state.usernames to li elements
+    const users = this.state.usernames.map(
+      (user) =>
+        <li key={user.toString()}>
+          {user}
+        </li> // end user map
+    ); // end map
     return(
       <div>
         <h1>Add Username</h1>
         <input type="text" placeholder="username" id="usernameIn"></input>
         <button onClick={ this.addUsername }>Add Username</button>
         <ul>
-          <li>un00</li>
-          <li>un01</li>
-          <li>un02</li>
-          <li>un03</li>
-          <li>{ this.state.testTest }</li>
+          {users}
         </ul>
       </div> // end containing div
     ); // end JSX
