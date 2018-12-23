@@ -17,6 +17,7 @@ class Body extends Component {
     // use setState instead of assigning values to state properties
     let usernames = this.state.usernames;
     usernames.push(usernameIn);
+    // may also use {usernames}
     this.setState({usernames: usernames});
   } // end addUsername
 
