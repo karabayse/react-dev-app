@@ -21,6 +21,15 @@ class Body extends Component {
     this.setState({usernames: usernames});
   } // end addUsername
 
+  checkForDupe = (event) => {
+    // capture current udernameIn
+    const newUsername = document.getElementById('usernameIn').value;
+    console.log('in checkforDupe', newUsername);
+    // check if in this.state.usernames
+    console.log(this.state.usernames.includes(newUsername));
+    // disable 'addUsernameButton' if dupe is found
+  } // end checkForDuper
+
   // render method
   render() {
     // use map to map this.state.usernames to li elements
