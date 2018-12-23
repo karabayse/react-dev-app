@@ -33,7 +33,9 @@ class Body extends Component {
     return(
       <div>
         <h1>Add Username</h1>
-        <input type="text" placeholder="username" id="usernameIn"></input>
+        <input type="text" placeholder="username" id="usernameIn"
+          onChange={this.checkForDupe}>
+        </input>
         <button onClick={ this.addUsername }>Add Username</button>
         <ul>
           {users}
