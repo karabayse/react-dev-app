@@ -28,14 +28,18 @@ class Body extends Component {
     // check if in this.state.usernames
     console.log(this.state.usernames.includes(newUsername));
     // disable 'addUsernameButton' if dupe is found
-  } // end checkForDuper
+  } // end checkForDupe
+
+  usernameClick = (user) => {
+    console.log('in usernameClick', user);
+  } // end usernameClick
 
   // render method
   render() {
     // use map to map this.state.usernames to li elements
     const users = this.state.usernames.map(
       (user) =>
-        <li key={user.toString()}>
+        <li key={user.toString()} onClick={() => this.usernameClick(user)}>
           {user}
         </li> // end user map
     ); // end map
