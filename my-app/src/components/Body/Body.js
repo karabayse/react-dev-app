@@ -5,6 +5,7 @@ class Body extends Component {
     super();
     // state
     this.state={
+      currentUsername: 'NONE',
       usernames: []
     }; // end state
   } // end constructor method
@@ -32,6 +33,7 @@ class Body extends Component {
 
   usernameClick = (user) => {
     console.log('in usernameClick', user);
+    this.setState({currentUsername: user});
   } // end usernameClick
 
   // render method
@@ -46,6 +48,7 @@ class Body extends Component {
     return(
       <div>
         <h1>Add Username</h1>
+        <p>Current Username: {this.state.currentUsername}</p>
         <input type="text" placeholder="username" id="usernameIn"
           onChange={this.checkForDupe}>
         </input>
