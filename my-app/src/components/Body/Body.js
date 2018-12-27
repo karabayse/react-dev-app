@@ -29,6 +29,7 @@ class Body extends Component {
     // check if in this.state.usernames
     console.log(this.state.usernames.includes(newUsername));
     // disable 'addUsernameButton' if dupe is found
+    document.getElementById('addUsernameButton').disabled = this.state.usernames.includes(newUsername)
   } // end checkForDupe
 
   usernameClick = (user) => {
@@ -52,7 +53,7 @@ class Body extends Component {
         <input type="text" placeholder="username" id="usernameIn"
           onChange={this.checkForDupe}>
         </input>
-        <button onClick={ this.addUsername }>Add Username</button>
+        <button onClick={ this.addUsername } id="addUsernameButton">Add Username</button>
         <ul>
           {users}
         </ul>
