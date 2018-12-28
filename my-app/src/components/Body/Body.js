@@ -20,6 +20,8 @@ class Body extends Component {
     usernames.push(usernameIn);
     // may also use {usernames}
     this.setState({usernames: usernames});
+    // clear username input
+    document.getElementById('usernameIn').value = '';
   } // end addUsername
 
   checkForDupe = (event) => {
