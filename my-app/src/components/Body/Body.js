@@ -14,14 +14,19 @@ class Body extends Component {
   // using the function expression auto-binds this method to this class
   addUsername = () => {
     const usernameIn = document.getElementById('usernameIn').value;
-    console.log('in addUsername function:', usernameIn);
-    // use setState instead of assigning values to state properties
-    let usernames = this.state.usernames;
-    usernames.push(usernameIn);
-    // may also use {usernames}
-    this.setState({usernames: usernames});
-    // clear username input
-    document.getElementById('usernameIn').value = '';
+    if(usernameIn === '') {
+      alert('Username required');
+    } // end if 
+    else {
+      console.log('in addUsername function:', usernameIn);
+      // use setState instead of assigning values to state properties
+      let usernames = this.state.usernames;
+      usernames.push(usernameIn);
+      // may also use {usernames}
+      this.setState({usernames: usernames});
+      // clear username input
+      document.getElementById('usernameIn').value = '';
+    } // end else
   } // end addUsername
 
   checkForDupe = (event) => {
