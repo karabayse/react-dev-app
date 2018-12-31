@@ -4,7 +4,7 @@ class Header extends Component {
   render() {
     return(
       <div className="App-header">
-        <h1>New Header</h1>
+        <h1>Username Application</h1>
       </div> // end containing div
     ); // end JSX
   } // end render
