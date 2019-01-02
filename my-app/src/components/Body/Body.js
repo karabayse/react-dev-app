@@ -16,7 +16,7 @@ class Body extends Component {
     const usernameIn = document.getElementById('usernameIn').value;
     if(usernameIn === '') {
       alert('Username required');
-    } // end if 
+    } // end if
     else {
       console.log('in addUsername function:', usernameIn);
       // use setState instead of assigning values to state properties
@@ -55,7 +55,7 @@ class Body extends Component {
     ); // end map
     return(
       <div>
-        <h1>Add Username</h1>
+        <h2>Add Username</h2>
         <p>Current Username: {this.state.currentUsername}</p>
         <input type="text" placeholder="username" id="usernameIn"
           onChange={this.checkForDupe}>
