@@ -6,6 +6,9 @@ import Footer from '../Footer/Footer'
 import './App.css';
 
 class App extends Component {
+  constructor(props) { // inject props to send data to App for header 
+    super(props); // must use props for proper functionality
+  } // end constructor method
   render() {
     return (
       <div className="App">

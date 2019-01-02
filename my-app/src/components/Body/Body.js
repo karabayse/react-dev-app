@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class Body extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     // state
     this.state={
       currentUsername: 'NONE',
