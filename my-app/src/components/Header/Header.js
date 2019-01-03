@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
+  constructor(props) {
+    super(props)
+  } // end constructor
   render() {
     return(
       <div className="App-header">
