@@ -12,6 +12,7 @@ class Header extends Component {
     return(
       <div className="App-header">
         <h1>Username Application</h1>
+        <p>Selected Username: {this.props.selectedUsername}</p>
       </div> // end containing div
     ); // end JSX
   } // end render
