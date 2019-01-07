@@ -6,8 +6,12 @@ import Footer from '../Footer/Footer'
 import './App.css';
 
 class App extends Component {
-  constructor(props) { // inject props to send data to App for header 
+  constructor(props) { // inject props to send data to App for header
     super(props); // must use props for proper functionality
+    // state for App component
+    this.state = {
+      username: 'AppUsername'
+    } // end state
   } // end constructor method
   render() {
     return (
