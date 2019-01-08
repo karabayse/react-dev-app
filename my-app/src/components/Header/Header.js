@@ -4,10 +4,11 @@ class Header extends Component {
   constructor(props) { // must inject props to receive data from App
     super(props); // add props to component
     // state for Header
-    this.state = {
-      selectedUsername = 'HeaderUsername'
-    } // end state
-  } // end constructor
+    // not necessary when using props
+    // this.state = {
+    //   selectedUsername = 'HeaderUsername'
+    // } // end state
+    // } // end constructor
   render() {
     return(
       <div className="App-header">
