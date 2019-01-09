@@ -39,7 +39,7 @@ class Body extends Component {
     document.getElementById('addUsernameButton').disabled = this.state.usernames.includes(newUsername)
   } // end checkForDupe
 
-  usernameClick = (user) => {
+  selectUsername = (user) => {
     console.log('in usernameClick', user);
     this.setState({currentUsername: user});
   } // end usernameClick
@@ -49,7 +49,7 @@ class Body extends Component {
     // use map to map this.state.usernames to li elements
     const users = this.state.usernames.map(
       (user) =>
-        <li key={user.toString()} onClick={() => this.usernameClick(user)}>
+        <li key={user.toString()} onClick={() => this.selectUsername(user)}>
           {user}
         </li> // end user map
     ); // end map
