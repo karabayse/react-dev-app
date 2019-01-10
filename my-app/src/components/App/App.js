@@ -13,11 +13,16 @@ class App extends Component {
       username: 'AppUsername'
     } // end state
   } // end constructor method
+
+setHeaderUsername = () => {
+  console.log('setHeaderUsername');
+} // end setHeaderUsername
+
   render() {
     return (
       <div className="App">
-        <Header />
-        <Body />
+        <Header selectedUsername = {this.state.username}/>
+        <Body setHeaderUsername = {this.setHeaderUsername}/>
         <Footer />
       </div>
     );  // end JSX  ->  what gets rendered to DOM in this component, and is returned
