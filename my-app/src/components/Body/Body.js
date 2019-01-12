@@ -42,6 +42,7 @@ class Body extends Component {
   selectUsername = (user) => {
     console.log('in usernameClick', user);
     this.setState({currentUsername: user});
+    this.props.setHeaderUsername(user);
   } // end usernameClick
 
   // render method
