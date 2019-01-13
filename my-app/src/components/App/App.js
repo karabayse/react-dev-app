@@ -14,8 +14,8 @@ class App extends Component {
     } // end state
   } // end constructor method
 
-setHeaderUsername = () => {
-  console.log('setHeaderUsername');
+setHeaderUsername = (user) => {
+  console.log('setHeaderUsername:', user);
 } // end setHeaderUsername
 
   render() {
