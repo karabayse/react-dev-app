@@ -16,6 +16,7 @@ class App extends Component {
 
 setHeaderUsername = (user) => {
   console.log('setHeaderUsername:', user);
+  this.setState({username: user});
 } // end setHeaderUsername
 
   render() {
